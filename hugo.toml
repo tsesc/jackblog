@@ -1,7 +1,7 @@
 # ========================================
 # 基本設定 (必要)
 # ========================================
-baseURL = 'https://tsesc.github.io/jackblog/'  # 你的網站 URL
+baseURL = 'https://tsc.lol'  # 你的網站 URL
 languageCode = 'zh-tw'                         # 語言代碼
 title = 'Jack Blog'                            # 網站標題
 theme = 'PaperMod'                            # 使用的主題
