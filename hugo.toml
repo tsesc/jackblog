@@ -1,131 +1,297 @@
-baseURL = 'https://tsesc.github.io/jackblog/'
-languageCode = 'zh-tw'
-title = 'Jack Blog'
-theme = 'PaperMod'
+# ========================================
+# 基本設定 (必要)
+# ========================================
+baseURL = 'https://tsesc.github.io/jackblog/'  # 你的網站 URL
+languageCode = 'zh-tw'                         # 語言代碼
+title = 'Jack Blog'                            # 網站標題
+theme = 'PaperMod'                            # 使用的主題
+copyright = '© 2024 Jack Tse'                 # 版權聲明
 
+# ========================================
+# 分頁設定
+# ========================================
 [pagination]
-pagerSize = 5
+pagerSize = 10  # 每頁顯示文章數量
 
+# ========================================
+# PaperMod 主題設定
+# ========================================
 [params]
-env = 'production'
+env = 'production'                             # 環境：production 會啟用 Google Analytics
 title = 'Jack Blog'
-description = '我的個人部落格'
-keywords = ['Blog', 'Portfolio', 'PaperMod']
+description = "Jack's Personal Blog - 分享技術、生活與家庭的點滴"
+keywords = ['Blog', 'Hugo', '技術', '生活', '家庭', 'Tech', 'Life']
 author = 'Jack Tse'
-defaultTheme = 'auto'
-disableThemeToggle = false
-ShowReadingTime = true
-ShowShareButtons = true
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = true
-ShowWordCount = true
-ShowRssButtonInSectionTermList = true
-UseHugoToc = true
-disableSpecial1stPost = false
-disableScrollToTop = false
-comments = false
-hidemeta = false
-hideSummary = false
-showtoc = true
-tocopen = false
+defaultTheme = 'auto'                          # auto/light/dark
+disableThemeToggle = false                     # 是否禁用主題切換按鈕
+disableScrollToTop = false                     # 是否禁用回到頂部按鈕
+
+# 文章設定
+ShowReadingTime = true                         # 顯示閱讀時間
+ShowShareButtons = true                        # 顯示分享按鈕
+ShowPostNavLinks = true                        # 顯示上一篇/下一篇
+ShowBreadCrumbs = true                         # 顯示麵包屑導航
+ShowCodeCopyButtons = true                     # 顯示複製代碼按鈕
+ShowWordCount = true                           # 顯示字數統計
+ShowRssButtonInSectionTermList = true          # 在分類/標籤頁顯示 RSS
+UseHugoToc = true                              # 使用 Hugo 內建目錄
+showtoc = true                                 # 顯示文章目錄
+tocopen = false                                # 預設展開目錄
+comments = false                               # 評論系統（需要另外設定）
+hidemeta = false                               # 隱藏文章元資訊
+hideSummary = false                            # 隱藏文章摘要
+
+# ========================================
+# SEO 和 Open Graph 設定
+# ========================================
+images = ["/images/site-feature.jpg"]          # 預設分享圖片
+DateFormat = "2006年1月2日"                    # 日期格式
+mainSections = ["posts"]                       # 主要內容區塊
 
 [params.assets]
-favicon = '<link / abs url>'
-favicon16x16 = '<link / abs url>'
-favicon32x32 = '<link / abs url>'
-apple_touch_icon = '<link / abs url>'
-safari_pinned_tab = '<link / abs url>'
+# favicon = "/favicon.ico"                     # 網站圖標
+# favicon16x16 = "/favicon-16x16.png"
+# favicon32x32 = "/favicon-32x32.png"
+# apple_touch_icon = "/apple-touch-icon.png"
+# safari_pinned_tab = "/safari-pinned-tab.svg"
+disableHLJS = false                            # 禁用 highlight.js
+disableFingerprinting = false                  # 禁用資源指紋
 
 [params.label]
-text = 'Home'
-icon = '/apple-touch-icon.png'
-iconHeight = 35
+text = 'Home'                                  # 首頁標籤文字
+# icon = '/apple-touch-icon.png'              # 首頁圖標
+iconHeight = 35                                # 圖標高度
 
+# ========================================
+# 個人檔案模式（可選）
+# ========================================
 [params.profileMode]
-enabled = false
-title = 'Jack Blog'
-subtitle = '歡迎來到我的部落格'
-imageUrl = '<img location>'
+enabled = true                                # 啟用個人檔案模式
+title = 'Jack Tse'
+subtitle = 'My Blog'
+# imageUrl = '/images/profile.jpg'            # 個人照片
 imageWidth = 120
 imageHeight = 120
-imageTitle = 'my image'
+imageTitle = 'Jack Tse'
 
 [[params.profileMode.buttons]]
-name = 'Posts'
+name = '文章'
 url = 'posts'
 
 [[params.profileMode.buttons]]
-name = 'Tags'
+name = '標籤'
 url = 'tags'
 
-[params.homeInfoParams]
-Title = '歡迎來到 Jack 的部落格 👋'
-Content = '分享技術、生活與想法的地方'
+[[params.profileMode.buttons]]
+name = '關於'
+url = 'about'
 
+# ========================================
+# 首頁資訊（profileMode 關閉時顯示）
+# ========================================
+[params.homeInfoParams]
+Title = "歡迎來到 Jack's Blog 👋"
+Content = """
+分享技術學習、生活體驗與家庭時光的個人空間。
+
+探索 **技術筆記**、**生活隨筆** 和 **家庭記錄**。
+"""
+
+# ========================================
+# 社交媒體連結
+# ========================================
 [[params.socialIcons]]
 name = 'github'
-url = 'https://github.com/'
+url = 'https://github.com/tsesc'
 
 [[params.socialIcons]]
-name = 'twitter'
-url = 'https://twitter.com/'
+name = 'email'
+url = 'mailto:sctseab@gmail.com'
 
+# [[params.socialIcons]]
+# name = 'rss'
+# url = '/index.xml'
+
+# ========================================
+# Google Analytics 設定
+# ========================================
 [params.analytics.google]
-SiteVerificationTag = 'XYZabc'
+# 請替換為你的 Google Analytics 4 測量 ID
+# 格式：G-XXXXXXXXXX
+SiteVerificationTag = 'G-9QC5W0W2ZL'
 
-[params.analytics.bing]
-SiteVerificationTag = 'XYZabc'
+# 如果使用舊版 Universal Analytics (UA-XXXXXX)
+# 請使用以下格式：
+# [googleAnalytics]
+# ID = 'UA-XXXXXXXXX-X'
 
-[params.analytics.yandex]
-SiteVerificationTag = 'XYZabc'
 
-[params.cover]
-hidden = true
-hiddenInList = true
-hiddenInSingle = true
-
-[params.editPost]
-URL = 'https://github.com/<path_to_repo>/content'
-Text = 'Suggest Changes'
-appendFilePath = true
-
+# ========================================
+# 搜尋功能設定
+# ========================================
 [params.fuseOpts]
-isCaseSensitive = false
-shouldSort = true
+isCaseSensitive = false                       # 搜尋區分大小寫
+shouldSort = true                              # 排序搜尋結果
 location = 0
 distance = 1000
 threshold = 0.4
 minMatchCharLength = 0
-limit = 10
+limit = 10                                     # 搜尋結果數量限制
 keys = ['title', 'permalink', 'summary', 'content']
 
+# ========================================
+# 封面圖片設定
+# ========================================
+[params.cover]
+hidden = false                                 # 全站隱藏封面
+hiddenInList = false                          # 列表頁隱藏封面
+hiddenInSingle = false                        # 文章頁隱藏封面
+linkFullImages = true                          # 點擊圖片放大
+responsiveImages = true                        # 響應式圖片
+
+# ========================================
+# 編輯文章連結
+# ========================================
+[params.editPost]
+URL = 'https://github.com/tsesc/jackblog/edit/main/content'
+Text = '✏️ 編輯此頁'
+appendFilePath = true                         # 添加文件路徑
+
+# ========================================
+# 導航選單
+# ========================================
 [[menu.main]]
-identifier = 'categories'
-name = '分類'
-url = '/categories/'
+identifier = 'posts'
+name = '📝 文章'
+url = '/posts/'
 weight = 10
 
 [[menu.main]]
-identifier = 'tags'
-name = '標籤'
-url = '/tags/'
+identifier = 'categories'
+name = '📁 分類'
+url = '/categories/'
 weight = 20
 
 [[menu.main]]
-identifier = 'archives'
-name = '歸檔'
-url = '/archives/'
+identifier = 'tags'
+name = '🏷️ 標籤'
+url = '/tags/'
 weight = 30
 
+[[menu.main]]
+identifier = 'archives'
+name = '📅 歸檔'
+url = '/archives/'
+weight = 40
+
+# [[menu.main]]
+# identifier = 'search'
+# name = '🔍 搜尋'
+# url = '/search/'
+# weight = 50
+
+# [[menu.main]]
+# identifier = 'about'
+# name = '👤 關於'
+# url = '/about/'
+# weight = 60
+
+# ========================================
+# Markdown 渲染設定
+# ========================================
 [markup]
 defaultMarkdownHandler = 'goldmark'
 
 [markup.goldmark.renderer]
-unsafe = true
+unsafe = true                                  # 允許 HTML 標籤
 
 [markup.highlight]
-codeFences = true
-guessSyntax = true
-lineNos = false
-style = 'monokai'
+anchorLineNos = false
+codeFences = true                             # 程式碼圍欄
+guessSyntax = true                            # 自動識別語言
+lineNos = false                               # 行號
+lineNumbersInTable = true
+noClasses = false                             # 使用 CSS class
+style = 'monokai'                             # 程式碼高亮主題
+tabWidth = 4
+
+[markup.tableOfContents]
+endLevel = 3                                  # 目錄結束層級
+ordered = false                               # 有序列表
+startLevel = 2                                # 目錄起始層級
+
+# ========================================
+# 隱私設定（GDPR 合規）
+# ========================================
+[privacy]
+[privacy.disqus]
+disable = true
+
+[privacy.googleAnalytics]
+anonymizeIP = true                            # 匿名化 IP
+disable = false
+respectDoNotTrack = true                      # 尊重 DNT 標頭
+useSessionStorage = false
+
+[privacy.instagram]
+disable = false
+simple = true
+
+[privacy.twitter]
+disable = false
+enableDNT = true
+simple = true
+
+[privacy.youtube]
+disable = false
+privacyEnhanced = true                        # 增強隱私模式
+
+# ========================================
+# 網站地圖設定
+# ========================================
+[sitemap]
+changefreq = 'weekly'
+filename = 'sitemap.xml'
+priority = 0.5
+
+# ========================================
+# 相關文章設定
+# ========================================
+[related]
+includeNewer = true
+threshold = 80
+toLower = false
+
+[[related.indices]]
+name = 'tags'
+weight = 100
+
+[[related.indices]]
+name = 'categories'
+weight = 70
+
+# ========================================
+# 輸出格式
+# ========================================
+[outputs]
+home = ["HTML", "RSS", "JSON"]               # 支援 JSON 用於搜尋功能
+
+# ========================================
+# RSS 設定
+# ========================================
+[services.rss]
+limit = 20                                    # RSS 文章數量限制
+
+# ========================================
+# 安全設定
+# ========================================
+[security]
+[security.exec]
+allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$']
+
+[security.funcs]
+getenv = ['^HUGO_', '^CI$']
+
+[security.http]
+methods = ['(?i)GET|POST']
+urls = ['.*']
