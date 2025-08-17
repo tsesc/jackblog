@@ -66,7 +66,7 @@ iconHeight = 35                                # 圖標高度
 # 個人檔案模式（可選）
 # ========================================
 [params.profileMode]
-enabled = true                                # 啟用個人檔案模式
+enabled = false                                # 啟用個人檔案模式
 title = 'Jack Tse'
 subtitle = 'My Blog'
 # imageUrl = '/images/profile.jpg'            # 個人照片
