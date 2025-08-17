@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://tsesc.github.io/jackblog/'
 languageCode = 'zh-tw'
 title = 'Jack Blog'
 theme = 'PaperMod'
