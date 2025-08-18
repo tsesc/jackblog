@@ -89,17 +89,17 @@ describe('calculateDiscount', () => {
     test('應該為 VIP 客戶提供 20% 折扣', () => {
         expect(calculateDiscount(100, 'VIP', 1)).toBe(80);
     });
-    
+
     test('批量購買應該有額外折扣', () => {
         expect(calculateDiscount(100, 'REGULAR', 10)).toBe(85);
     });
-    
+
     test('應該處理負數價格的邊界情況', () => {
         expect(() => calculateDiscount(-100, 'VIP', 1)).toThrow();
     });
 });
 ```
-
+1
 ## 整合 AI 的 Code Review 工作流程
 
 ### 步驟 1：提交前的 AI 預審
@@ -235,9 +235,9 @@ import subprocess
 
 def ai_review_diff():
     # 獲取 git diff
-    diff = subprocess.run(['git', 'diff', 'HEAD~1'], 
+    diff = subprocess.run(['git', 'diff', 'HEAD~1'],
                          capture_output=True, text=True).stdout
-    
+
     # 調用 AI API
     response = openai.ChatCompletion.create(
         model="gpt-4",
@@ -246,7 +246,7 @@ def ai_review_diff():
             {"role": "user", "content": f"請審查以下程式碼變更：\n{diff}"}
         ]
     )
-    
+
     return response.choices[0].message.content
 ```
 
@@ -298,18 +298,18 @@ def calculate_ai_review_roi(team_size, avg_salary, pr_per_week):
     # 成本參數
     hourly_rate = avg_salary / 2080  # 年薪轉時薪
     review_hours_saved = pr_per_week * 2.5  # 平均每個 PR 節省 2.5 小時
-    
+
     # AI 工具成本（以 GitHub Copilot 為例）
     ai_cost_per_month = team_size * 19  # 企業版價格
-    
+
     # 效益計算
     monthly_hours_saved = review_hours_saved * 4
     monthly_cost_saved = monthly_hours_saved * hourly_rate * team_size
-    
+
     # ROI 計算
     net_benefit = monthly_cost_saved - ai_cost_per_month
     roi_percentage = (net_benefit / ai_cost_per_month) * 100
-    
+
     return {
         "monthly_cost_saved": f"${monthly_cost_saved:,.0f}",
         "ai_tool_cost": f"${ai_cost_per_month:,.0f}",
@@ -413,7 +413,7 @@ const trackAISuggestions = {
     accepted: 0,
     rejected: 0,
     modified: 0,
-    
+
     getAcceptanceRate() {
         return (this.accepted / this.total) * 100;
     }
@@ -514,7 +514,7 @@ class AIAccuracyTracker {
             modified: outcome.modified,
             reason: outcome.reason
         });
-        
+
         // 定期分析並調整提示詞
         if (this.data.length % 100 === 0) {
             this.optimizePrompts();
@@ -597,13 +597,13 @@ def analyze_review_metrics():
         'post_merge_defects': count_production_bugs(),
         'team_satisfaction': get_survey_results()
     }
-    
+
     # 產生改進建議
     if metrics['avg_review_time'] > 24:  # 小時
         suggest("考慮拆分較大的 PR")
     if metrics['ai_suggestion_accuracy'] < 0.7:
         suggest("調整 AI 提示詞或更換工具")
-    
+
     return metrics
 ```
 
@@ -771,11 +771,7 @@ def process_user_data(users):
 - 📚 [團隊培訓 PPT 模板](#)
 - 🔧 [CI/CD 整合腳本範例](#)
 
-### 社群支援
-
-- 💬 加入 [AI Code Review Taiwan](https://t.me/aicodereviewtw) Telegram 群組
-- 🌟 關注 [#AICodeReview](https://twitter.com/hashtag/AICodeReview) 獲取最新資訊
-- 📧 聯繫作者：jack@example.com
+- 📧 聯繫作者：sctseab@gmail.com
 
 ---
 
