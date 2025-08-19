@@ -56,14 +56,10 @@ git push origin main
 git push -u origin main
 ```
 
-### 5. Verify GitHub Pages Deployment
-```bash
-# Check GitHub Actions status
-gh run list --workflow=pages-build-deployment --limit=1
-
-# View deployment status
-gh api repos/$(gh repo view --json nameWithOwner -q .nameWithOwner)/pages
-```
+### 5. Verify Cloudflare Pages Deployment
+After pushing to GitHub, Cloudflare Pages will automatically trigger a deployment.
+Check your Cloudflare dashboard for deployment status at:
+https://dash.cloudflare.com/
 
 ## Commit Message Guidelines
 
@@ -150,14 +146,10 @@ git pull origin main --rebase
 git push origin main
 ```
 
-If GitHub Pages deployment fails:
-```bash
-# Check workflow logs
-gh run view [run-id] --log
-
-# Check Pages settings
-gh api repos/$(gh repo view --json nameWithOwner -q .nameWithOwner)/pages
-```
+If Cloudflare Pages deployment fails:
+- Check the Cloudflare Pages dashboard for build logs
+- Verify your Cloudflare Pages project settings
+- Ensure the build command and output directory are configured correctly
 
 ## Quick Command Reference
 
@@ -177,7 +169,5 @@ git push origin main
 ```
 
 ### Check Deployment Status
-```bash
-# Quick check if deployment succeeded
-gh run list --workflow=pages-build-deployment --limit=1 | grep -E "completed.*success"
-```
+Visit your Cloudflare Pages dashboard to monitor deployment status:
+https://dash.cloudflare.com/pages
