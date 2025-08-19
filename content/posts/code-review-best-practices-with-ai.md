@@ -99,7 +99,6 @@ describe('calculateDiscount', () => {
     });
 });
 ```
-1
 ## 整合 AI 的 Code Review 工作流程
 
 ### 步驟 1：提交前的 AI 預審
