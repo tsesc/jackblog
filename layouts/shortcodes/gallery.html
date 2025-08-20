@@ -1,0 +1,120 @@
+{{ $images := split (.Get 0) "," }}
+{{ $caption := .Get "caption" }}
+
+<div class="image-gallery">
+    {{ range $images }}
+    {{ $src := trim . " " }}
+    {{ $image := resources.Get $src }}
+    {{ if $image }}
+        {{ $webp := $image.Resize "400x webp q85" }}
+        {{ $jpg := $image.Resize "400x jpg q85" }}
+        {{ $thumb := $image.Resize "200x jpg q75" }}
+        
+        <div class="gallery-item">
+            <picture>
+                <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+                <img src="{{ $jpg.RelPermalink }}" 
+                     alt="Gallery image" 
+                     loading="lazy" 
+                     decoding="async"
+                     data-full="{{ $image.RelPermalink }}"
+                     onclick="openModal(this)">
+            </picture>
+        </div>
+    {{ else }}
+        <div class="gallery-item">
+            <img src="{{ $src }}" 
+                 alt="Gallery image" 
+                 loading="lazy" 
+                 decoding="async"
+                 onclick="openModal(this)">
+        </div>
+    {{ end }}
+    {{ end }}
+    {{ with $caption }}
+    <p class="gallery-caption">{{ . | markdownify }}</p>
+    {{ end }}
+</div>
+
+<!-- Modal for full-size images -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<style>
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary);
+    margin-top: 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 5%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #bbb;
+}
+</style>
+
+<script>
+function openModal(img) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
+    modal.style.display = 'block';
+    modalImg.src = img.dataset.full || img.src;
+}
+
+function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+}
+</script>

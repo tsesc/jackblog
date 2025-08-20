@@ -49,11 +49,11 @@ DateFormat = "2006年1月2日"                    # 日期格式
 mainSections = ["posts"]                       # 主要內容區塊
 
 [params.assets]
-# favicon = "/favicon.ico"                     # 網站圖標
-# favicon16x16 = "/favicon-16x16.png"
-# favicon32x32 = "/favicon-32x32.png"
-# apple_touch_icon = "/apple-touch-icon.png"
-# safari_pinned_tab = "/safari-pinned-tab.svg"
+favicon = "/favicon.ico"                       # 網站圖標
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon-32x32.png"
+apple_touch_icon = "/apple-touch-icon.png"
+safari_pinned_tab = "/safari-pinned-tab.svg"
 disableHLJS = false                            # 禁用 highlight.js
 disableFingerprinting = false                  # 禁用資源指紋
 
@@ -61,6 +61,16 @@ disableFingerprinting = false                  # 禁用資源指紋
 text = 'Home'                                  # 首頁標籤文字
 # icon = '/apple-touch-icon.png'              # 首頁圖標
 iconHeight = 35                                # 圖標高度
+
+# ========================================
+# SEO 優化設定
+# ========================================
+[params.seo]
+enableRobotsTXT = true                         # 啟用 robots.txt
+enableSitemap = true                           # 啟用網站地圖
+enableOpengraph = true                         # 啟用 Open Graph
+enableTwitterCards = true                     # 啟用 Twitter Cards
+enableJsonLd = true                            # 啟用 JSON-LD 結構化資料
 
 # ========================================
 # 個人檔案模式（可選）
@@ -115,16 +125,7 @@ url = 'mailto:sctseab@gmail.com'
 # ========================================
 # Google Analytics 設定
 # ========================================
-[params.analytics.google]
-# 請替換為你的 Google Analytics 4 測量 ID
-# 格式：G-XXXXXXXXXX
-SiteVerificationTag = 'G-9QC5W0W2ZL'
-
-# 如果使用舊版 Universal Analytics (UA-XXXXXX)
-# 請使用以下格式：
-# [googleAnalytics]
-# ID = 'UA-XXXXXXXXX-X'
-
+googleAnalytics = 'G-9QC5W0W2ZL'
 
 # ========================================
 # 搜尋功能設定
@@ -275,12 +276,42 @@ weight = 70
 # ========================================
 [outputs]
 home = ["HTML", "RSS", "JSON"]               # 支援 JSON 用於搜尋功能
+page = ["HTML"]
+section = ["HTML", "RSS"]
 
 # ========================================
 # RSS 設定
 # ========================================
 [services.rss]
 limit = 20                                    # RSS 文章數量限制
+
+# ========================================
+# 影像處理設定
+# ========================================
+[imaging]
+resampleFilter = "Lanczos"
+quality = 85
+anchor = "Smart"
+
+# ========================================
+# 快取設定
+# ========================================
+[caches]
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = "10m"
+
+[caches.getcsv]
+dir = ":cacheDir/:project"
+maxAge = "10m"
+
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
 
 # ========================================
 # 安全設定
