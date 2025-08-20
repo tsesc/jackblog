@@ -1,0 +1,32 @@
+<!-- Related Posts -->
+{{ if .IsPage }}
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ if $related }}
+<div class="related-posts" style="margin: 2rem 0; padding: 1.5rem; border: 1px solid var(--border); border-radius: 8px; background: var(--theme);">
+    <h3 style="margin-bottom: 1rem; color: var(--primary);">相關文章</h3>
+    <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        {{ range $related }}
+        <article style="display: flex; gap: 1rem; padding: 1rem; border: 1px solid var(--border); border-radius: 6px; transition: box-shadow 0.2s ease;">
+            {{ if .Params.cover.image }}
+            <div>
+                <img src="{{ .Params.cover.image }}" alt="{{ .Title }}" loading="lazy" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;">
+            </div>
+            {{ end }}
+            <div>
+                <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem;">
+                    <a href="{{ .Permalink }}" style="color: var(--primary); text-decoration: none;">{{ .Title }}</a>
+                </h4>
+                <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; color: var(--secondary); line-height: 1.4;">{{ .Summary | truncate 100 }}</p>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; font-size: 0.8rem; color: var(--tertiary);">
+                    <time>{{ .Date.Format "2006-01-02" }}</time>
+                    {{ range .Params.tags | first 2 }}
+                    <span style="background: var(--code-bg); padding: 0.2rem 0.4rem; border-radius: 3px;">#{{ . }}</span>
+                    {{ end }}
+                </div>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+{{ end }}

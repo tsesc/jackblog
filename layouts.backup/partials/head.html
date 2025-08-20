@@ -14,8 +14,8 @@
 {{ if .Params.cover.image }}
 <meta property="og:image" content="{{ .Params.cover.image | absURL }}">
 <meta property="og:image:alt" content="{{ .Params.cover.alt | default .Title }}">
-{{ else }}
-<meta property="og:image" content="{{ .Site.Params.images | index 0 | absURL }}">
+{{ else if .Site.Params.images }}
+<meta property="og:image" content="{{ index .Site.Params.images 0 | absURL }}">
 {{ end }}
 
 {{ if .IsPage }}
@@ -37,8 +37,8 @@
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
 {{ if .Params.cover.image }}
 <meta name="twitter:image" content="{{ .Params.cover.image | absURL }}">
-{{ else }}
-<meta name="twitter:image" content="{{ .Site.Params.images | index 0 | absURL }}">
+{{ else if .Site.Params.images }}
+<meta name="twitter:image" content="{{ index .Site.Params.images 0 | absURL }}">
 {{ end }}
 
 <!-- Additional SEO Meta -->
@@ -68,4 +68,4 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://www.google-analytics.com">
 
-{{ partial "head" . }}
+{{/* Original theme head content will be included by baseof.html */}}

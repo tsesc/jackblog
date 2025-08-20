@@ -1,81 +1,24 @@
 {{ $page := .Site.GetPage (.Get 0) }}
 {{ if $page }}
-<div class="internal-link">
-    <a href="{{ $page.Permalink }}" class="internal-link-card">
+<div style="margin: 1.5rem 0;">
+    <a href="{{ $page.Permalink }}" style="display: flex; gap: 1rem; padding: 1rem; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.2s ease;">
         {{ if $page.Params.cover.image }}
-        <div class="internal-link-image">
-            <img src="{{ $page.Params.cover.image }}" alt="{{ $page.Title }}" loading="lazy">
+        <div>
+            <img src="{{ $page.Params.cover.image }}" alt="{{ $page.Title }}" loading="lazy" style="width: 80px; height: 80px; object-fit: cover; border-radius: 6px;">
         </div>
         {{ end }}
-        <div class="internal-link-content">
-            <h4>{{ $page.Title }}</h4>
-            <p>{{ $page.Summary | truncate 120 }}</p>
-            <div class="internal-link-meta">
+        <div>
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--primary); font-size: 1.1rem;">{{ $page.Title }}</h4>
+            <p style="margin: 0 0 0.5rem 0; color: var(--secondary); line-height: 1.4; font-size: 0.9rem;">{{ $page.Summary | truncate 120 }}</p>
+            <div style="display: flex; gap: 0.5rem; align-items: center; font-size: 0.8rem; color: var(--tertiary);">
                 <time>{{ $page.Date.Format "2006-01-02" }}</time>
                 {{ range $page.Params.categories | first 1 }}
-                <span class="category">{{ . }}</span>
+                <span style="background: var(--code-bg); padding: 0.2rem 0.6rem; border-radius: 12px;">{{ . }}</span>
                 {{ end }}
             </div>
         </div>
     </a>
 </div>
-
-<style>
-.internal-link {
-    margin: 1.5rem 0;
-}
-
-.internal-link-card {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.2s ease;
-}
-
-.internal-link-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
-    border-color: var(--primary);
-}
-
-.internal-link-image img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.internal-link-content h4 {
-    margin: 0 0 0.5rem 0;
-    color: var(--primary);
-    font-size: 1.1rem;
-}
-
-.internal-link-content p {
-    margin: 0 0 0.5rem 0;
-    color: var(--secondary);
-    line-height: 1.4;
-    font-size: 0.9rem;
-}
-
-.internal-link-meta {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    font-size: 0.8rem;
-    color: var(--tertiary);
-}
-
-.internal-link-meta .category {
-    background: var(--code-bg);
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-}
-</style>
 {{ else }}
 <p style="color: red;">⚠️ 找不到連結: {{ .Get 0 }}</p>
 {{ end }}

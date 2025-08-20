@@ -1,0 +1,85 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "圖片" }}
+{{ $caption := .Get "caption" }}
+{{ $class := .Get "class" | default "responsive-img" }}
+
+{{ if $src }}
+{{ $image := "" }}
+{{ if hasPrefix $src "http" }}
+    <!-- External image -->
+    <figure class="image-figure {{ $class }}">
+        <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+        {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+    </figure>
+{{ else }}
+    <!-- Local image processing -->
+    {{ $image = resources.Get $src }}
+    {{ if $image }}
+        {{ $webp := $image.Resize "800x webp q85" }}
+        {{ $jpg := $image.Resize "800x jpg q85" }}
+        {{ $thumb := $image.Resize "400x jpg q75" }}
+        
+        <figure class="image-figure {{ $class }}">
+            <picture>
+                <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+                <img src="{{ $jpg.RelPermalink }}" 
+                     alt="{{ $alt }}" 
+                     loading="lazy" 
+                     decoding="async"
+                     data-thumb="{{ $thumb.RelPermalink }}">
+            </picture>
+            {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+        </figure>
+    {{ else }}
+        <!-- Fallback for static images -->
+        <figure class="image-figure {{ $class }}">
+            <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+            {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+        </figure>
+    {{ end }}
+{{ end }}
+
+<style>
+.image-figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.image-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.image-figure img:hover {
+    transform: scale(1.02);
+}
+
+.image-figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    font-style: italic;
+}
+
+.responsive-img {
+    width: 100%;
+}
+
+.small-img img {
+    max-width: 300px;
+}
+
+.medium-img img {
+    max-width: 500px;
+}
+
+.large-img img {
+    max-width: 800px;
+}
+</style>
+{{ else }}
+<p style="color: red;">⚠️ 請提供圖片來源 (src)</p>
+{{ end }}
