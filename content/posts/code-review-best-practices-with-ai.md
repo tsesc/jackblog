@@ -1,6 +1,6 @@
 +++
 title = 'AI 時代的 Code Review 最佳實踐：從 Google 經驗到智能輔助'
-date = 2025-01-18T14:30:00+08:00
+date = 2025-08-18T14:30:00+08:00
 draft = false
 tags = ['Code Review', 'AI工具', '軟體開發', 'GitHub Copilot', 'Claude', '最佳實踐', '團隊協作']
 categories = ['技術筆記']

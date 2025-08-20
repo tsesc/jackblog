@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '完整說明如何安裝配置 MySQL/MariaDB 資料庫，建立 AzerothCore 所需的資料庫結構與初始資料'
 toc = true
-weight = 4
+weight = 104
 +++
 
 ## 前言

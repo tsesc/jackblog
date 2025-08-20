@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '整理 WoW 私服架設與運營過程中的常見問題、錯誤訊息解決方案，以及伺服器維護技巧'
 toc = true
-weight = 10
+weight = 110
 +++
 
 ## 前言

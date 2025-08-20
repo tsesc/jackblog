@@ -7,7 +7,7 @@ categories = ['技術筆記']
 author = 'Jack'
 description = '深入了解 Anthropic 的 Claude Code，從基礎設置到進階工作流程，掌握 AI 輔助編程的最佳實踐'
 toc = true
-weight = 1
+weight = 2
 +++
 
 ## 什麼是 Claude Code？

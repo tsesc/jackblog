@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '詳細說明如何下載、編譯和安裝 AzerothCore with PlayerBots，建立功能完整的 WoW 私服核心'
 toc = true
-weight = 3
+weight = 103
 +++
 
 ## 前言

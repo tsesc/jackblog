@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '完整介紹如何架設自己的魔獸世界巫妖王之怒私人伺服器，包含所需軟硬體規格與前置準備'
 toc = true
-weight = 1
+weight = 101
 +++
 
 ## 前言
@@ -61,7 +61,7 @@ Windows 主機
 ### 主機端（Windows）
 1. **作業系統**：Windows 7/10/11
 2. **虛擬化軟體**：[VirtualBox](https://www.virtualbox.org/) 7.0 或更新版本
-3. **SSH 客戶端**：[PuTTY](https://www.putty.org/)
+3. **SSH 客戶端**：[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 4. **資料庫管理工具**：[HeidiSQL](https://www.heidisql.com/)
 5. **遊戲客戶端**：WoTLK 3.3.5a 版本
 
@@ -152,5 +152,6 @@ Windows 主機
 - [AzerothCore GitHub](https://github.com/azerothcore/azerothcore-wotlk)
 - [PlayerBots 模組](https://github.com/liyunfan1223/mod-playerbots)
 - [AzerothCore Wiki](https://www.azerothcore.org/wiki)
+- [WoW 私服架設資源](https://abs.freemyip.com:84/api/public/dl/ShUDo8u5?inline=true)
 
 準備好開始你的私服冒險了嗎？讓我們開始吧！

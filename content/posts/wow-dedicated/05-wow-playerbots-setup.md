@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '詳細介紹如何設定 PlayerBots 模組，讓你的私服充滿智慧型 AI 玩家，打造熱鬧的遊戲世界'
 toc = true
-weight = 5
+weight = 105
 +++
 
 ## 前言

@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '教你如何設定 Azeroth Web Map 即時顯示玩家位置，以及創建自訂的全地圖飛行坐騎'
 toc = true
-weight = 11
+weight = 111
 +++
 
 ## 前言

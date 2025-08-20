@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '詳細說明如何安裝設定 VirtualBox 虛擬機與 Debian Linux 系統，為 WoW 私服建立穩定的運行環境'
 toc = true
-weight = 2
+weight = 102
 +++
 
 ## 前言

@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '詳細說明如何管理遊戲帳號、設定 GM 權限、使用管理指令，以及帳號安全維護'
 toc = true
-weight = 7
+weight = 107
 +++
 
 ## 前言

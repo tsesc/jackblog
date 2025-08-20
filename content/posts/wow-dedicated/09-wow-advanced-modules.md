@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '介紹各種實用的 AzerothCore 模組安裝方法，包含跨陣營、全種族職業、拍賣場機器人等進階功能'
 toc = true
-weight = 9
+weight = 109
 +++
 
 ## 前言

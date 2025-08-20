@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '深入解析 worldserver.conf 和 authserver.conf 設定，優化伺服器效能與遊戲體驗'
 toc = true
-weight = 6
+weight = 106
 +++
 
 ## 前言

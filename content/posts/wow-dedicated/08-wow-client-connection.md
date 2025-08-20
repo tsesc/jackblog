@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '完整說明如何設定 WoW 客戶端連線到私服，包含 realmlist 修改、插件安裝與常見連線問題解決'
 toc = true
-weight = 8
+weight = 108
 +++
 
 ## 前言
