@@ -7,7 +7,7 @@ categories = ['WoW私服']
 author = 'Jack'
 description = '使用 Docker Compose 在 30 分鐘內架設完整的 WoW WotLK 3.3.5a 私人伺服器，包含 Playerbots 和完整配置'
 toc = true
-weight = 100
+weight = 1
 +++
 
 使用 Docker 方式架設 WoW 私人伺服器，比傳統方式更簡單、更快速、更穩定。本指南將教你如何在 Windows 上使用 Docker Compose 建立完整的 AzerothCore + Playerbots 伺服器。

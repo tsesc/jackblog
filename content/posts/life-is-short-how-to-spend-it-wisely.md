@@ -7,6 +7,7 @@ categories = ['生活分享']
 author = 'Jack'
 description = '探討如何在有限的人生中做出有意義的選擇，讓每一天都過得更有價值。基於 "Life is Short (How to Spend It Wisely)" 影片的深度思考。'
 toc = true
+weight = 1
 +++
 
 > "Life is Short (How to Spend It Wisely)" 這部影片提醒我們，人生的價值不在於找到更多時間，而在於讓現有的時間真正有意義。
