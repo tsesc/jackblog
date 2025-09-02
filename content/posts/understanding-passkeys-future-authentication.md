@@ -1,6 +1,6 @@
 +++
 title = '深入了解 Passkeys：告別密碼時代的新型身份驗證技術'
-date = 2025-09-02T14:30:00+08:00
+date = 2025-01-02T14:30:00+08:00
 draft = false
 tags = ['Passkeys', '網路安全', '身份驗證', 'WebAuthn', 'FIDO2', '生物識別', '無密碼認證']
 categories = ['技術筆記']
