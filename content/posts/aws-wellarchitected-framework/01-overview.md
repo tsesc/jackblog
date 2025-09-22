@@ -1,6 +1,6 @@
 +++
 title = 'AWS 遊戲架構全解析：Well-Architected Framework 導論'
-date = 2025-01-22T09:00:00+08:00
+date = 2025-09-22T10:00:00+08:00
 draft = false
 tags = ['AWS', '遊戲開發', '雲端架構', 'Well-Architected Framework', '系統設計']
 categories = ['技術筆記']

@@ -1,6 +1,6 @@
 +++
 title = '遊戲巨頭的雲端征途：AWS 架構實戰案例分析'
-date = 2025-01-22T16:00:00+08:00
+date = 2025-09-22T10:00:00+08:00
 draft = false
 tags = ['AWS', '案例分析', '遊戲架構', 'Fortnite', 'Roblox', 'Epic Games']
 categories = ['技術筆記']

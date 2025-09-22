@@ -1,6 +1,6 @@
 +++
 title = '遊戲營運卓越之道：自動化、監控與持續改進'
-date = 2025-01-22T10:00:00+08:00
+date = 2025-09-22T10:00:00+08:00
 draft = false
 tags = ['AWS', '遊戲營運', 'DevOps', 'CI/CD', '監控系統', 'GameOps']
 categories = ['技術筆記']
