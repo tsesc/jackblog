@@ -1,12 +1,13 @@
 +++
 title = 'OpenSpec：讓 AI 先讀懂需求再寫程式的 Spec-Driven Development 框架'
-date = 2026-02-24T10:00:00+08:00
+date = 2026-02-24T00:00:00+08:00
 draft = false
 tags = ['AI工具', 'OpenSpec', 'Spec-Driven Development', '開發流程', 'Claude Code', '開源工具']
 categories = ['技術筆記']
 author = 'Jack'
 description = '介紹 OpenSpec 這個開源的 Spec-Driven Development 框架，如何在 AI 輔助開發中建立結構化的需求溝通機制，提升程式碼產出的可預測性'
 toc = true
+weight = 1
 +++
 
 ## AI 寫程式很快，但方向對嗎？

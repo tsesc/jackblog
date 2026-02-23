@@ -7,6 +7,7 @@ categories = ['技術筆記']
 author = 'Jack'
 description = '深入了解 Claude Code Skills 功能，學習如何創建、配置和使用 Skills 來擴展 Claude 的能力，提升開發效率'
 toc = true
+weight = 1
 +++
 
 ## 什麼是 Claude Code Skills？
