@@ -1,6 +1,6 @@
 +++
 title = 'OpenSpec：讓 AI 先讀懂需求再寫程式的 Spec-Driven Development 框架'
-date = 2026-02-23T10:00:00+08:00
+date = 2026-02-24T10:00:00+08:00
 draft = false
 tags = ['AI工具', 'OpenSpec', 'Spec-Driven Development', '開發流程', 'Claude Code', '開源工具']
 categories = ['技術筆記']
