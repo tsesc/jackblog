@@ -1,13 +1,13 @@
 +++
 title = 'Go 語言系列（九）：使用者認證'
-date = 2026-03-12T10:00:00+08:00
+date = 2026-02-24T09:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', 'JWT', 'bcrypt', '認證', '安全性', 'Golang系列']
 categories = ['技術筆記']
 author = 'Jack'
 description = '在 Go Web 應用中實現完整的使用者認證系統：密碼雜湊、JWT Token、認證中間件與受保護的 API 端點'
 toc = true
-weight = 2
+weight = 1
 +++
 
 > 這是 **Go 語言從零到 Web 應用**系列的第九篇。上一篇我們整合了資料庫，這篇要加入使用者認證，讓 API 知道「誰」在操作。

@@ -1,13 +1,13 @@
 +++
 title = 'Go 語言系列（一）：為什麼要學 Go？'
-date = 2026-02-24T10:00:00+08:00
+date = 2026-02-24T01:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', '程式語言', '後端開發', 'Golang系列']
 categories = ['技術筆記']
 author = 'Jack'
 description = '介紹 Go 語言的歷史背景、設計哲學、適用場景與業界應用，帶你了解為什麼 Go 值得學習'
 toc = true
-weight = 10
+weight = 1
 +++
 
 > 這是 **Go 語言從零到 Web 應用**系列的第一篇。整個系列共 10 篇文章，將帶你從完全不懂 Go，到能獨立建構一個具備 CRUD、認證、資料庫的完整 Web 應用程式。

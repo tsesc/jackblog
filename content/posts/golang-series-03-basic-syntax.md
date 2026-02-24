@@ -1,13 +1,13 @@
 +++
 title = 'Go 語言系列（三）：基礎語法'
-date = 2026-02-28T10:00:00+08:00
+date = 2026-02-24T03:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', '語法', '基礎教學', 'Golang系列']
 categories = ['技術筆記']
 author = 'Jack'
 description = '學習 Go 的基礎語法：變數宣告、基本型別、條件判斷、迴圈、函式定義與多值回傳、指標概念'
 toc = true
-weight = 8
+weight = 1
 +++
 
 > 這是 **Go 語言從零到 Web 應用**系列的第三篇。上一篇我們設定好了開發環境，現在要來學 Go 的基礎語法。

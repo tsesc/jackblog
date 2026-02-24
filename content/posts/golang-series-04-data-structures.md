@@ -1,13 +1,13 @@
 +++
 title = 'Go 語言系列（四）：資料結構'
-date = 2026-03-02T10:00:00+08:00
+date = 2026-02-24T04:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', '資料結構', 'Struct', 'Interface', 'Golang系列']
 categories = ['技術筆記']
 author = 'Jack'
 description = '深入學習 Go 的核心資料結構：Array、Slice、Map、Struct、Interface 和 Method，理解組合優於繼承的設計'
 toc = true
-weight = 7
+weight = 1
 +++
 
 > 這是 **Go 語言從零到 Web 應用**系列的第四篇。上一篇學了基礎語法，這篇要來認識 Go 的核心資料結構。

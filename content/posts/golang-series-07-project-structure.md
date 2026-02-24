@@ -1,13 +1,13 @@
 +++
 title = 'Go 語言系列（七）：專案結構與路由'
-date = 2026-03-08T10:00:00+08:00
+date = 2026-02-24T07:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', '專案結構', 'Middleware', '路由', 'Golang系列']
 categories = ['技術筆記']
 author = 'Jack'
 description = '學習 Go Web 專案的標準目錄結構、中間件設計模式、進階路由技巧與環境變數管理'
 toc = true
-weight = 4
+weight = 1
 +++
 
 > 這是 **Go 語言從零到 Web 應用**系列的第七篇。上一篇我們建立了第一個 API Server，但所有程式碼都在一個檔案裡。這篇要來學如何組織一個可維護的專案結構。

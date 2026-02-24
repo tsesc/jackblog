@@ -1,13 +1,13 @@
 +++
 title = 'Go 語言系列（八）：資料庫整合'
-date = 2026-03-10T10:00:00+08:00
+date = 2026-02-24T08:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', 'SQLite', 'database/sql', '資料庫', 'CRUD', 'Golang系列']
 categories = ['技術筆記']
 author = 'Jack'
 description = '學習在 Go Web 應用中整合 SQLite 資料庫：database/sql 標準介面、Migration、CRUD 操作與 Repository Pattern'
 toc = true
-weight = 3
+weight = 1
 +++
 
 > 這是 **Go 語言從零到 Web 應用**系列的第八篇。上一篇我們建立了結構清晰的專案，但資料存在記憶體中。這篇要把資料存進真正的資料庫。

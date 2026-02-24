@@ -1,13 +1,13 @@
 +++
 title = 'Go 語言系列（六）：HTTP 基礎與第一個 Web Server'
-date = 2026-03-06T10:00:00+08:00
+date = 2026-02-24T06:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', 'HTTP', 'Web Server', 'net/http', 'Golang系列']
 categories = ['技術筆記']
 author = 'Jack'
 description = '使用 Go 標準庫 net/http 建立第一個 Web Server：Handler、路由、JSON 回應與靜態檔案服務'
 toc = true
-weight = 5
+weight = 1
 +++
 
 > 這是 **Go 語言從零到 Web 應用**系列的第六篇，也是實戰篇的開始。從這篇開始，我們要用前五篇學到的 Go 基礎，開始建構一個真正的 Web 應用。

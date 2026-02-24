@@ -1,13 +1,13 @@
 +++
 title = 'Go 語言系列（五）：錯誤處理與併發'
-date = 2026-03-04T10:00:00+08:00
+date = 2026-02-24T05:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', '錯誤處理', '併發', 'Goroutine', 'Channel', 'Golang系列']
 categories = ['技術筆記']
 author = 'Jack'
 description = '學習 Go 的錯誤處理模式與併發程式設計：error interface、defer/panic/recover、Goroutine、Channel 和 sync 套件'
 toc = true
-weight = 6
+weight = 1
 +++
 
 > 這是 **Go 語言從零到 Web 應用**系列的第五篇，也是基礎篇的最後一篇。這篇要學的是 Go 最有特色的兩個主題：錯誤處理和併發。

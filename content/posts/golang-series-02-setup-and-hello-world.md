@@ -1,13 +1,13 @@
 +++
 title = 'Go 語言系列（二）：環境設定與 Hello World'
-date = 2026-02-26T10:00:00+08:00
+date = 2026-02-24T02:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', '環境設定', '開發工具', 'Golang系列']
 categories = ['技術筆記']
 author = 'Jack'
 description = '手把手帶你安裝 Go 開發環境、設定 VS Code 編輯器、理解 Go Modules，並寫出第一支 Go 程式'
 toc = true
-weight = 9
+weight = 1
 +++
 
 > 這是 **Go 語言從零到 Web 應用**系列的第二篇。上一篇我們了解了為什麼要學 Go，這篇要動手把環境準備好，並寫出你的第一支 Go 程式。
