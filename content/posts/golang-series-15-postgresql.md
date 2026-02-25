@@ -1,6 +1,6 @@
 +++
 title = 'Go 語言系列（十五）：PostgreSQL 進階'
-date = 2026-02-25T15:00:00+08:00
+date = 2026-02-24T15:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', 'PostgreSQL', 'pgx', 'Migration', '資料庫', 'Golang系列']
 categories = ['技術筆記']

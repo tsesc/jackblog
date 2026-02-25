@@ -1,6 +1,6 @@
 +++
 title = 'Go 語言系列（十八）：Kubernetes 部署'
-date = 2026-02-25T18:00:00+08:00
+date = 2026-02-24T18:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', 'Kubernetes', 'K8s', 'Docker', 'Helm', '部署', 'Golang系列']
 categories = ['技術筆記']

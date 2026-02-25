@@ -1,6 +1,6 @@
 +++
 title = 'Go 語言系列（十四）：ORM 與資料庫工具 — GORM vs sqlx'
-date = 2026-02-25T14:00:00+08:00
+date = 2026-02-24T14:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', 'GORM', 'sqlx', 'ORM', '資料庫', 'Golang系列']
 categories = ['技術筆記']

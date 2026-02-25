@@ -1,6 +1,6 @@
 +++
 title = 'Go 語言系列（十七）：微服務架構'
-date = 2026-02-25T17:00:00+08:00
+date = 2026-02-24T17:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', '微服務', 'Microservices', 'API Gateway', 'Circuit Breaker', 'Golang系列']
 categories = ['技術筆記']

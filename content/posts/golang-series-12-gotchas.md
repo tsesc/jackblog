@@ -1,6 +1,6 @@
 +++
 title = 'Go 語言系列（十二）：常見陷阱與反模式'
-date = 2026-02-25T12:00:00+08:00
+date = 2026-02-24T12:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', '陷阱', 'Gotchas', '反模式', '最佳實踐', 'Golang系列']
 categories = ['技術筆記']

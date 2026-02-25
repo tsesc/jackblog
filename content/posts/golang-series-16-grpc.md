@@ -1,6 +1,6 @@
 +++
 title = 'Go 語言系列（十六）：gRPC 入門'
-date = 2026-02-25T16:00:00+08:00
+date = 2026-02-24T16:00:00+08:00
 draft = false
 tags = ['Golang', 'Go', 'gRPC', 'Protocol Buffers', 'protobuf', 'RPC', 'Golang系列']
 categories = ['技術筆記']
