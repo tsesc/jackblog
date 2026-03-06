@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（十二）：從 VSCode 完全畢業——完整配置、痛點解法與學習資源'
-date = 2026-03-18T10:00:00+08:00
+date = 2026-03-06T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列']
 categories = ['技術筆記']

@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（七）：程式碼智能——LSP 與自動補全'
-date = 2026-03-13T10:00:00+08:00
+date = 2026-03-01T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列', 'LSP']
 categories = ['技術筆記']

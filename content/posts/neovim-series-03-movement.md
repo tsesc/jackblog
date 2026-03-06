@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（三）：移動的藝術——在程式碼中飛速穿梭'
-date = 2026-03-09T10:00:00+08:00
+date = 2026-02-25T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列']
 categories = ['技術筆記']

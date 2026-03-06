@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（八）：語法高亮與檔案導航——Treesitter + Telescope'
-date = 2026-03-14T10:00:00+08:00
+date = 2026-03-02T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列', 'Treesitter', 'Telescope']
 categories = ['技術筆記']

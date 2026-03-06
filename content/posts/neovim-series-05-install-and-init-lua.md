@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（五）：安裝 Neovim 與你的第一個 init.lua'
-date = 2026-03-11T10:00:00+08:00
+date = 2026-02-27T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列', 'Lua']
 categories = ['技術筆記']

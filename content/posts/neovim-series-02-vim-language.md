@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（二）：Vim 的語言——動詞、名詞、組合技'
-date = 2026-03-08T10:00:00+08:00
+date = 2026-02-24T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列']
 categories = ['技術筆記']

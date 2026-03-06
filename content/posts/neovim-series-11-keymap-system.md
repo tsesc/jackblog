@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（十一）：打造你的快捷鍵系統——which-key 與 Leader Key 設計哲學'
-date = 2026-03-17T10:00:00+08:00
+date = 2026-03-05T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列', 'which-key']
 categories = ['技術筆記']

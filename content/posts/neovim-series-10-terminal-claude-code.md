@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（十）：Terminal 與 Claude Code 整合——AI 時代的開發工作流'
-date = 2026-03-16T10:00:00+08:00
+date = 2026-03-04T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列', 'Claude Code', 'Terminal']
 categories = ['技術筆記']

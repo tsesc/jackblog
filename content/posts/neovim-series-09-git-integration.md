@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（九）：Git 整合工作流——在編輯器中完成所有 Git 操作'
-date = 2026-03-15T10:00:00+08:00
+date = 2026-03-03T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列', 'Git']
 categories = ['技術筆記']

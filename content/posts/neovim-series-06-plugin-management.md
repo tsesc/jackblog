@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（六）：Plugin 管理——用 lazy.nvim 打造你的工具箱'
-date = 2026-03-12T10:00:00+08:00
+date = 2026-02-28T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列', 'lazy.nvim']
 categories = ['技術筆記']

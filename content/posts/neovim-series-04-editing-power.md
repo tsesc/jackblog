@@ -1,6 +1,6 @@
 +++
 title = 'Neovim 系列（四）：編輯效率加倍——Registers、Macros 與 Dot Command'
-date = 2026-03-10T10:00:00+08:00
+date = 2026-02-26T10:00:00+08:00
 draft = false
 tags = ['Neovim', 'Vim', '編輯器', '開發工具', 'Neovim系列']
 categories = ['技術筆記']
