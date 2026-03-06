@@ -318,3 +318,25 @@ nvim -u NONE        # 不載入 init.lua
 Neovim 和 VSCode 不是非此即彼的選擇。你可以在不同場景下使用不同工具。但我相信，一旦你習慣了 Neovim 的工作流，你會越來越少打開 VSCode。
 
 歡迎來到 Neovim 的世界。享受這趟旅程！
+
+---
+
+## Neovim 系列文章導航
+
+**基礎篇**
+1. [為什麼我想離開 VSCode？](/posts/neovim-series-01-why-leave-vscode/)
+2. [Vim 的語言——動詞、名詞、組合技](/posts/neovim-series-02-vim-language/)
+3. [移動的藝術](/posts/neovim-series-03-movement/)
+4. [編輯效率加倍](/posts/neovim-series-04-editing-power/)
+
+**設定篇**
+5. [安裝 Neovim 與 init.lua](/posts/neovim-series-05-install-and-init-lua/)
+6. [Plugin 管理 lazy.nvim](/posts/neovim-series-06-plugin-management/)
+7. [程式碼智能 LSP + 補全](/posts/neovim-series-07-lsp-completion/)
+8. [語法高亮與檔案導航](/posts/neovim-series-08-treesitter-telescope/)
+
+**進階篇**
+9. [Git 整合工作流](/posts/neovim-series-09-git-integration/)
+10. [Terminal 與 Claude Code 整合](/posts/neovim-series-10-terminal-claude-code/)
+11. [打造快捷鍵系統](/posts/neovim-series-11-keymap-system/)
+12. **從 VSCode 完全畢業（本篇）**

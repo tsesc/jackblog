@@ -402,3 +402,25 @@ return {
 - **Comment.nvim** 提供方便的註解快捷鍵
 
 但作為一個開發環境，我們還缺少最關鍵的功能——**程式碼智能**。下一篇，我們會設定 LSP（Language Server Protocol）和自動補全，讓 Neovim 擁有和 VSCode 一樣的程式碼導航和補全能力。
+
+---
+
+## Neovim 系列文章導航
+
+**基礎篇**
+1. [為什麼我想離開 VSCode？](/posts/neovim-series-01-why-leave-vscode/)
+2. [Vim 的語言——動詞、名詞、組合技](/posts/neovim-series-02-vim-language/)
+3. [移動的藝術](/posts/neovim-series-03-movement/)
+4. [編輯效率加倍](/posts/neovim-series-04-editing-power/)
+
+**設定篇**
+5. [安裝 Neovim 與 init.lua](/posts/neovim-series-05-install-and-init-lua/)
+6. **Plugin 管理 lazy.nvim（本篇）**
+7. [程式碼智能 LSP + 補全](/posts/neovim-series-07-lsp-completion/)
+8. [語法高亮與檔案導航](/posts/neovim-series-08-treesitter-telescope/)
+
+**進階篇**
+9. [Git 整合工作流](/posts/neovim-series-09-git-integration/)
+10. [Terminal 與 Claude Code 整合](/posts/neovim-series-10-terminal-claude-code/)
+11. [打造快捷鍵系統](/posts/neovim-series-11-keymap-system/)
+12. [從 VSCode 完全畢業](/posts/neovim-series-12-graduation/)

@@ -476,3 +476,25 @@ require("config.keymaps")
 不過現在的 Neovim 還很「素」——沒有漂亮的主題、沒有檔案樹、沒有自動補全。這些都需要 **plugins**。
 
 下一篇，我們會安裝 Neovim 最受歡迎的 plugin manager——**lazy.nvim**，並開始安裝你的第一批 plugins。
+
+---
+
+## Neovim 系列文章導航
+
+**基礎篇**
+1. [為什麼我想離開 VSCode？](/posts/neovim-series-01-why-leave-vscode/)
+2. [Vim 的語言——動詞、名詞、組合技](/posts/neovim-series-02-vim-language/)
+3. [移動的藝術](/posts/neovim-series-03-movement/)
+4. [編輯效率加倍](/posts/neovim-series-04-editing-power/)
+
+**設定篇**
+5. **安裝 Neovim 與 init.lua（本篇）**
+6. [Plugin 管理 lazy.nvim](/posts/neovim-series-06-plugin-management/)
+7. [程式碼智能 LSP + 補全](/posts/neovim-series-07-lsp-completion/)
+8. [語法高亮與檔案導航](/posts/neovim-series-08-treesitter-telescope/)
+
+**進階篇**
+9. [Git 整合工作流](/posts/neovim-series-09-git-integration/)
+10. [Terminal 與 Claude Code 整合](/posts/neovim-series-10-terminal-claude-code/)
+11. [打造快捷鍵系統](/posts/neovim-series-11-keymap-system/)
+12. [從 VSCode 完全畢業](/posts/neovim-series-12-graduation/)
